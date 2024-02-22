@@ -1,4 +1,4 @@
-﻿using namespace std;
+using namespace std;
 #include <iostream>
 
 int main()
@@ -10,7 +10,26 @@ int main()
 
 	if (numb >= 48 && numb <= 57) cout << "symbol is number";
 	else if((numb >= 65 && numb <= 90) || (numb >= 97 && numb <= 122)) cout << "symbol is text";
-	else cout << "another symbol";
+	else{
+  switch(numb)
+ {
+ case 33:
+ case 40:
+ case 41:
+ case 44:
+ case 45:
+ case 46:
+ case 58:
+ case 59:
+ case 63:
+  cout << "another symbol";
+  break;
+
+ default:
+  cout << "uncorect,try again";
+  break;
+}
+ }
 }
 
 	/*int company;
