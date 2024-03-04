@@ -1,0 +1,88 @@
+﻿using namespace std;
+#include <iostream>
+
+int main()
+{
+        /*int num1, num2, num3, num4, max;
+        cout << "Print - num1, num2, num3, num4: ";
+        cin >> num1 >> num2 >> num3 >> num4;
+        max = num1;
+        if (max < num2) max = num2;
+        if (max < num3) max = num3;
+        if (max < num4) max = num4;
+        cout << max;*/
+
+        /*int a, b, n;
+        cout << "enter a, b: ";
+        cin >> a >> b;
+        cout << "enter n: ";
+        cin >> n;
+        if (a > b) swap(a, b);
+        for (int i = 0, count = a; i < n; i++) {
+            cout << i++ << " ";
+            if (count > b) count = a;
+        }*/
+
+        /*int max;;
+        cout << "Print max: ";
+        cin >> max;
+        if (max < 0) max*(-1);
+        else {
+            for (float i = 0; max >= i; i += 0.25)
+                cout << i << " ";
+        }*/
+
+        int num, count = 0;
+        float sum = 0;
+        while (num != 0) {
+            cout << "enter num: ";
+            cin >> num;
+            sum += num;
+            count++;
+        }
+        cout << sum / count;
+
+        // ex5
+        /*char a;
+        cout << "enter char: ";
+        cin >> a;
+        cout << ((a >= 'a' && a <= 'z' || a >= 'a' && a <= 'z') ? "yes" : "no");*/
+
+        // ex6
+        /*int min1, min2, max1, max2, num;
+        cout << "enter min1 and max1: ";
+        cin >> min1 >> max1;
+        cout << "enter min2 and max2: ";
+        cin >> min2 >> max2;
+        if (min2 > max2) swap(min2, max2);
+        if (min2 > max2) swap(min2, max2);
+        if (min1 > min2) swap(min1, min2);
+        if (max1 > max2) swap(max1, max2);
+        for (int i = min1; i < min2 && i <= max1; i++) cout << i << " ";
+        for (int i = max1 + 1; i <= max2; i++) {
+            if (i > max1)
+            cout << i << " ";
+        }*/
+
+        // ex7
+        /*int min, max, n, count = 0;
+        cout << "enter min, max: ";
+        cin >> min >> max;
+        cout << "enter n: ";
+        cin >> n;
+        if (min > max) swap(min, max);
+        for (int i = min; max >= i; i++) {
+            if (i % n == 0) count++;
+        }
+        cout << count;*/
+        /*int a;
+        cout << "enter a: ";
+        cin >> a;
+        for (int i = 0; a > i; i++) {
+            for (int j = 0; a > j; j++) {
+                if (i == j || i == a - 1 - j) cout << "*";
+                else cout << " ";
+            }
+            cout << endl;
+        }*/
+}
