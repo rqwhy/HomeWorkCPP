@@ -8,3 +8,5 @@
 [homework-3](https://github.com/rqwhy/HomeWorkCPP/blob/main/домашнее%20задание-3)- логические операции и действия
 #
 [homework-4](https://github.com/rqwhy/HomeWorkCPP/blob/main/домашнее%20задание-4)
+#
+[homework-4](https://github.com/rqwhy/HomeWorkCPP/blob/main/Домашнее%20задание-5)
