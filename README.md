@@ -12,3 +12,5 @@
 [homework-5](https://github.com/rqwhy/HomeWorkCPP/blob/main/Домашнее%20задание%20-%205)
 #
 [homework-6](https://github.com/rqwhy/HomeWorkCPP/blob/main/Домашнее%20задание%20-%206)
+#
+[homework-7](https://github.com/rqwhy/HomeWorkCPP/blob/main/Домашнее%20задание%20-%207)
