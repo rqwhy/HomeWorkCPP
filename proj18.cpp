@@ -1,0 +1,45 @@
+﻿using namespace std;
+#include <iostream>
+
+
+int main()
+{
+	const int SIZE = 7;
+	int array[SIZE]{ 10,70,40,20,50,60,30 }, arrayBuf1[10][SIZE]{};
+	int count = 1;
+	int max = array[0];
+	int arrayBuf2[10][SIZE]{};
+	int n = 1;
+	for (int i = 1; i < SIZE; i++) {
+		if (array[i] > max) max = array[i];
+	}
+	int min = array[0];
+	for (int i = 1; i < SIZE; i++) {
+		if (array[i] < min) min = array[i];
+	}
+	if ((-1 * min) > max) max = min * -1;
+	for (int n2 = 1; (max / n2) != 0; n2 *= 10) {
+		n2 *= 10;
+	}
+
+	for (int n1 = 1; n1 <= n; n1 *= 10) {
+		for (int i = 0, arrBuf = 0; i < SIZE; i++) {
+			for (int j = 0; j < 10; j++) {
+				if (((array[i] / n1)) % 10 == j) arrayBuf2[j][arrBuf++] = array[i];
+			}
+		}
+		for (int i = 0, arrayBuf4 = 0; i < 10; i++) {
+			for (int j = 0; j < SIZE; j++) {
+				if (arrayBuf2[i][j]) array[arrayBuf4++] = arrayBuf2[i][j];
+			}
+		}
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < SIZE; j++) {
+				arrayBuf2[i][j] = 0;
+			}
+		}
+	}
+
+
+	for (int i = 0; i < SIZE; i++) cout << array[i] << "  ";
+}
